@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Karyawan Dashboard</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="expand">
+            <div class="sidebar-header text-center p-3">
+                <p class="text-white mb-0">Welcome, Andika Fajar Dwi Saputro</p>
+                <small class="text-white-50">Administrator</small>
+            </div>
+            <ul class="sidebar-nav">
+
+                <li class="sidebar-title"></li>
+                <li class="sidebar-item dashboard ">
+                    <a href="index.html" class="sidebar-link">
+                        <i class='bx bx-home-alt'></i>  
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-title">MENU KARYAWAN</li>
+                <li class="sidebar-item dashboard active">
+                    <a href="karyawan.html" class="sidebar-link">
+                        <i class='bx bx-group'></i>
+                        <span>Karyawan</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="jabatan.html" class="sidebar-link">
+                        <i class='bx bx-id-card'></i>
+                        <span>Jabatan</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="divisi.html" class="sidebar-link">
+                        <i class='bx bx-briefcase-alt'></i>
+                        <span>Divisi</span>
+                    </a>
+                </li>
+                
+                <li class="sidebar-title">MENU ABSENSI</li>
+                <li class="sidebar-item">
+                    <a href="absensi.html" class="sidebar-link">
+                        <i class='bx bx-calendar'></i>
+                        <span>Absensi</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="izin.html" class="sidebar-link">
+                        <i class='bx bx-time'></i>
+                        <span>Izin</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="lembur.html" class="sidebar-link">
+                        <i class='bx bx-printer'></i>
+                        <span>Lembur</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer text-center p-3">
+                <a href="#" class="btn btn-primary w-100">
+                    <i class='bx bx-log-out'></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main">
+            <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Daftar Nama Karyawan</h2>
+        <button onclick="window.location.href='tambah karyawan.html'" class="btn btn-primary">+ Tambah Karyawan</button>
+    </div>
+    
+    <div class="table-responsive">
+        <table class="table table-striped align-middle">
+            <thead class="table-primary">
+                <tr>
+                    <th>No</th>
+                    <th>Kode</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th style="width: 300px;">Alamat</th>
+                    <th>Jabatan</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>K001</td>
+                    <td>Andika Fajar Dwi Saputro</td>
+                    <td>Fajarsandika848@gmail.com</td>
+                    <td>Jl. H. MahbBud, RT.07/RW.04, Cipadu Jaya, Kec. Larangan, Kota Tangerang, Banten 15155</td>
+                    <td>Boss</td>
+                    <td>
+                        <button class="btn btn-outline-info btn-sm"><i class="lni lni-eye"></i></button>
+                        <button class="btn btn-outline-primary btn-sm"><i class="lni lni-pencil"></i></button>
+                        <button class="btn btn-outline-danger btn-sm"><i class="lni lni-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>K002</td>
+                    <td>Rendi dwi Kuncoro</td>
+                    <td>rendikuncoro@gmail.com</td>
+                    <td>Tangerang</td>
+                    <td>Karyawan</td>
+                    <td>
+                        <button class="btn btn-outline-info btn-sm"><i class="lni lni-eye"></i></button>
+                        <button class="btn btn-outline-primary btn-sm"><i class="lni lni-pencil"></i></button>
+                        <button class="btn btn-outline-danger btn-sm"><i class="lni lni-trash-can"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>K003</td>
+                    <td>Muhammad Daffa</td>
+                    <td>Daffa@gmail.com</td>
+                    <td>Jakarta Selatan</td>
+                    <td>Kepala Bagian</td>
+                    <td>
+                        <button class="btn btn-outline-info btn-sm"><i class="lni lni-eye"></i></button>
+                        <button class="btn btn-outline-primary btn-sm"><i class="lni lni-pencil"></i></button>
+                        <button class="btn btn-outline-danger btn-sm"><i class="lni lni-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>K004</td>
+                    <td>Anandito daffa prianto</td>
+                    <td>Dito@gmail.com</td>
+                    <td>Jakarta selatan</td>
+                    <td>Karyawan</td>
+                    <td>
+                        <button class="btn btn-outline-info btn-sm"><i class="lni lni-eye"></i></button>
+                        <button class="btn btn-outline-primary btn-sm"><i class="lni lni-pencil"></i></button>
+                        <button class="btn btn-outline-danger btn-sm"><i class="lni lni-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>K005</td>
+                    <td>Ridho rahmat yudistriya</td>
+                    <td>Ridho@gmail.com</td>
+                    <td>Jakarta selatan</td>
+                    <td>Karyawan</td>
+                    <td>
+                        <button class="btn btn-outline-info btn-sm"><i class="lni lni-eye"></i></button>
+                        <button class="btn btn-outline-primary btn-sm"><i class="lni lni-pencil"></i></button>
+                        <button class="btn btn-outline-danger btn-sm"><i class="lni lni-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>K006</td>
+                    <td>Aditya Pratama</td>
+                    <td>adit@gmail.com</td>
+                    <td>Tangerang</td>
+                    <td>Karyawan</td>
+                    <td>
+                        <button class="btn btn-outline-info btn-sm"><i class="lni lni-eye"></i></button>
+                        <button class="btn btn-outline-primary btn-sm"><i class="lni lni-pencil"></i></button>
+                        <button class="btn btn-outline-danger btn-sm"><i class="lni lni-trash-can"></i></button>
+                    </td>
+                </tr>
+                <!-- Tambahkan data karyawan lainnya sesuai kebutuhan -->
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
